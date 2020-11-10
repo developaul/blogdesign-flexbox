@@ -22,3 +22,9 @@
     }
 }
 
+// Coloca Imagenes
+@mixin image( $image-URL ) {
+    background-image: url( $image-URL );
+    background-repeat: no-repeat;
+    background-position: center center;
+}
