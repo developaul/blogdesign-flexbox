@@ -213,3 +213,86 @@ a {
 }
 
 
+/* Footer */
+.footer {
+    background-color: $firstColor;
+    padding-top: 1rem;
+    color: $white;
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    .contenedor {
+        @include tablet {
+            display: flex;
+
+            .caja {
+                flex: 1;
+            }
+
+        }
+
+        .nosotros {
+            text-align: center;
+        }
+
+        .entradas {
+            text-align: center;
+        }
+    }
+
+    .copyright {
+        background-color: $darkFirstColor;
+        margin: 2rem 0 0 0;
+        padding: 1rem 0;
+        text-align: center;
+    }
+}
+
+
+/** Redes Sociales **/
+.sociales ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    li {
+        margin-right: 1rem;
+
+        a {
+            text-decoration: none;
+
+            &::before {
+                font-family: 'Font Awesome 5 Brands';
+                color: #FFFFFF;
+                font-size: 2rem;
+            }
+
+            &[href*="facebook.com"]::before {
+                content: '\f39e';
+            }
+
+            &[href*="twitter.com"]::before {
+                content: '\f099';
+            }
+
+            &[href*="youtube.com"]::before {
+                content: '\f167';
+            }
+
+            &[href*="instagram.com"]::before {
+                content: '\f16d';
+            }
+
+            &[href*="pinterest.com"]::before {
+                content: '\f0d2';
+            }
+
+        }
+
+        span {
+            display: none
+        }
+    }
+}
