@@ -28,3 +28,12 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+// Button
+@mixin button( $bg-color, $color ) {
+    background-color: $bg-color;
+    color: $color;
+    display: inline-block;
+    padding: .6rem 2rem;
+    margin-top: 1rem;
+}
